@@ -1,2 +1,2 @@
 # goat
-Private projecy for my use.
+Private project for my use.
