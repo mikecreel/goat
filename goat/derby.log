@@ -1,0 +1,288 @@
+----------------------------------------------------------------
+Wed Mar 16 15:43:39 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:39 CDT 2016:
+Shutting down instance a816c00e-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:39 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance 08264012-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:39 CDT 2016:
+Shutting down instance 08264012-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:39 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance 6839c016-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:40 CDT 2016:
+Shutting down instance 6839c016-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:40 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance c851401a-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:40 CDT 2016:
+Shutting down instance c851401a-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:40 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance 286cc01e-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:40 CDT 2016:
+Shutting down instance 286cc01e-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:40 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance 888c4022-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:41 CDT 2016:
+Shutting down instance 888c4022-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:41 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance e8afc026-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:41 CDT 2016:
+Shutting down instance e8afc026-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:41 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance 48d7402a-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:41 CDT 2016:
+Shutting down instance 48d7402a-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:47 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a902c02e-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:47 CDT 2016:
+Shutting down instance a902c02e-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:47 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance 09324032-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:47 CDT 2016:
+Shutting down instance 09324032-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:47 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance 6965c036-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:48 CDT 2016:
+Shutting down instance 6965c036-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:48 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance c99d403a-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:48 CDT 2016:
+Shutting down instance c99d403a-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:48 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance 29d8c03e-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:49 CDT 2016:
+Shutting down instance 29d8c03e-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:49 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance 8a184042-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:49 CDT 2016:
+Shutting down instance 8a184042-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:49 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance ea5bc046-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:49 CDT 2016:
+Shutting down instance ea5bc046-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:49 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance 4aa3404a-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:50 CDT 2016:
+Shutting down instance 4aa3404a-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:50 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance aaeec04e-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:50 CDT 2016:
+Shutting down instance aaeec04e-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+----------------------------------------------------------------
+Wed Mar 16 15:43:50 CDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance 0b3e4052-0153-812b-67fd-000006d56de0 
+on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/mcreel.SSS/workspace/goat/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=C:\Users\mcreel.SSS\workspace\goat
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Mar 16 15:43:50 CDT 2016:
+Shutting down instance 0b3e4052-0153-812b-67fd-000006d56de0 on database directory C:\Dropbox\Dropbox\eclipseWorkSpace\MyDB with class loader sun.misc.Launcher$AppClassLoader@c387f44 

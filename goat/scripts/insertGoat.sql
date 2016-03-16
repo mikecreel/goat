@@ -1,0 +1,1 @@
+UPDATE Goat.Herd SET ContactName='Alfred Schmidt', City='Hamburg' WHERE TAG='Alfreds Futterkiste';
