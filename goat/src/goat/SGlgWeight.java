@@ -97,6 +97,7 @@ public class SGlgWeight {
 		//Action Listers for Add Button
 		addButton.addActionListener(new ActionListener() {
 	    	  public void actionPerformed(ActionEvent e) {
+// TODO Wean weight calculation not working suspect a bad date 2/17/2016 vs 02/17/2016
 	    		  Checkdate gooddate = new Checkdate();
 	    		  Boolean OK2Save = gooddate.mmddyyyy(weightdateField.getText().trim());
 	    		  //Make sure weight is a valid weight (float)
@@ -198,7 +199,7 @@ public class SGlgWeight {
 				JScrollPane scrollpane = new JScrollPane(SG.weighttable);
 			    scrollpane.setBounds(10, 80, 600, 300);
 			    weightsPanel.add(scrollpane);
-	}
+	}//TODO Appears and incorrect date will screw up the weight calculation
 	
 	private void caculateWeanWeight() {
 		//Calculate Adjusted Weaning Weight

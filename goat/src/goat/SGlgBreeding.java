@@ -33,8 +33,9 @@ public class SGlgBreeding {
 		
 		JPanel breedingPanel = new JPanel();
 		breedingPanel.setLayout(null);
-		SG.lgjtp.addTab("Breeding", breedingPanel);
 		breedingPanel.setBackground(SG.customColor);
+		SG.lgjtp.addTab("Breeding", breedingPanel);
+		
 		
 		//Breeding Date//
 

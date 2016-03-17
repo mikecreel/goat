@@ -32,8 +32,9 @@ public class SGlgNotes {
 
 		JPanel notesPanel = new JPanel();
 		notesPanel.setLayout(null);
-		SG.lgjtp.addTab("Notes", notesPanel);
 		notesPanel.setBackground(SG.customColor);
+		SG.lgjtp.addTab("Notes", notesPanel);
+		
 		
 		//Note Date
 		
@@ -69,7 +70,7 @@ public class SGlgNotes {
 		saveButton.addActionListener(new ActionListener() {
 	    	  public void actionPerformed(ActionEvent e) {
 	    		  
-	    		  // TODO Check for valid note date
+// TODO Check for valid note date
 	    		  
 	    		  // Data Checking
 	    		  

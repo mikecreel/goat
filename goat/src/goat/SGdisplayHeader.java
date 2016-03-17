@@ -53,9 +53,9 @@ public class SGdisplayHeader {
 		JTextField tagField = new JTextField();
 		tagField.setBounds(115, 20, 50, 20);
 		tagField.setText(SG.SGdata.getTag());
-		SG.jp1.add(tagField);
 		tagField.setColumns(20);
 		tagField.setEditable(false);
+		SG.jp1.add(tagField);
 		
 		//Name
 		JLabel nameLabel = new JLabel("Name: ",SwingConstants.RIGHT);
@@ -65,7 +65,7 @@ public class SGdisplayHeader {
 		JTextField nameField = new JTextField();
 		nameField.setBounds(250, 20, 200, 20);
 		nameField.setText(SG.SGdata.getName());
-		SG.jp1.add(nameField);
+		SG.jp1.add(nameField);                        //TODO This needs to be moved to below the set editable on all fields
 		nameField.setColumns(40);
 		nameField.setEditable(false);
 		

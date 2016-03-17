@@ -39,13 +39,5 @@ public class Control {
 		// TODO This does nothing but starts the program.  Anything to add here?
 	}
 	
-	
-	
-		
-
-	
-	
-	
-	
 
 }

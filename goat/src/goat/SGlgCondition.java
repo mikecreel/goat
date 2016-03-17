@@ -33,6 +33,7 @@ public class SGlgCondition {
 		conditionPanel.setLayout(null);
 		SG.lgjtp.addTab("Condition", conditionPanel);
 		conditionPanel.setBackground(SG.customColor);
+		conditionPanel.setBackground(SG.customColor);
 		
 		//Condition Date//
 		
@@ -124,7 +125,7 @@ public class SGlgCondition {
 	          public void actionPerformed(ActionEvent e) {
 	        		  String myinsert;
 	        		  
-	        		  //TODO Verify  date is correct format
+//TODO Verify  date is correct format
 	        		  
 	        		  //Data Checking
 	        		  
@@ -138,6 +139,7 @@ public class SGlgCondition {
 	        		  myinsert = myinsert +  scoreBox.getSelectedItem() + "', '";
 	        		  myinsert = myinsert +  conditionnotesField.getText().trim() + "', ";		
 	        		  myinsert = myinsert +  Integer.valueOf(SG.SGdata.getId()) + ")";
+//DEBUG System.out.println
 	        		  System.out.println(myinsert);
 	        		  SG.SGquery.updateGoat(myinsert);
 	        		  SG.SGquery.getmygoat("SELECT * From GOAT.HERD WHERE name = '" + SG.SGdata.getName() + "'");

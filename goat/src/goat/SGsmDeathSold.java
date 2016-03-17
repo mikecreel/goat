@@ -26,7 +26,7 @@ public class SGsmDeathSold {
 	}
 
 	public void displayDeathSold() {
-		
+// TODO After cancel of edit.  Tab is not reset to beginning.		
 		//////////////////////////////
 		//Setup the deceased/sold tab
 		//////////////////////////////

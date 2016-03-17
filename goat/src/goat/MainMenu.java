@@ -30,13 +30,14 @@ Control cc;
 	      
 	    //Create Items on 1st Menu
 	    JMenuItem menuItemExit = new JMenuItem("Exit");
-	    JMenuItem menuItemTest = new JMenuItem("Test");
+	    JMenuItem menuItemTest = new JMenuItem("Test");  //This seems to be just a test menu item
+
 	    //Create Action Listener for Menu Item Test
 	    menuItemTest.addActionListener(new ActionListener(){
 
-	        @Override
+	        @Override //Why is this an overide, compare to what I did for DSR
 	        public void actionPerformed(ActionEvent ae) {
-	      	  cc.myTree.updateTree("MIKE Creel");
+	      	  cc.myTree.updateTree("MIKE Creel");  //Not sure what this does if anything
 	        }
 	    });
 	    
@@ -45,7 +46,7 @@ Control cc;
 	    //Create Action Listener for Menu Item Exit
 	    menuItemExit.addActionListener(new ActionListener(){
 
-	        @Override
+	        @Override  //Why is this an overide, compare to what I did for DSR
 	        public void actionPerformed(ActionEvent ae) {
 	      	  System.exit(0);
 	        }

@@ -26,7 +26,7 @@ public class SGsmParentage {
 		//////////////////////////////
 		//Setup the parentage tab
 		//////////////////////////////
-		
+//TODO This needs work.  Selection of blood should not occur until after update button is pushed.		
 		JPanel parentagePanel = new JPanel();
 		parentagePanel.setLayout(null);
 		parentagePanel.setBackground(SG.customColor);
@@ -82,7 +82,7 @@ public class SGsmParentage {
 		percentageLabel.setBounds(650, 30, 100, 20);
 		parentagePanel.add(percentageLabel);
 		
-		String[] percentageStrings = {"","100% NZ", "FullBlood", "87.5% (7/8)", "75% (3/4)", "50% (1/2)","GeneMaster", "Premier GeneMaster", "Kiko GeneMaster"};
+		String[] percentageStrings = {"","100% NZ", "PureBlood", "87.5% (7/8)", "75% (3/4)", "50% (1/2)","GeneMaster", "Premier GeneMaster", "Kiko GeneMaster"};
 		JComboBox<String> percentageBox = new JComboBox<String>(percentageStrings);;
 		percentageBox.setBounds(755, 30, 200, 20);
 		percentageBox.setSelectedItem(SG.SGdata.getPercentage());

@@ -19,8 +19,9 @@ public class SGlgService {
 	public void displayService() {
 		JPanel servicePanel = new JPanel();
 		servicePanel.setLayout(null);
-		SG.lgjtp.addTab("Service", servicePanel);
 		servicePanel.setBackground(SG.customColor);
+		SG.lgjtp.addTab("Service", servicePanel);
+		
 		
 		String[] col = {"Date", "Doe", "Note", "Est Kidding Date"};
 		

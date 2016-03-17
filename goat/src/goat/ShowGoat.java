@@ -6,6 +6,10 @@ import javax.swing.JTabbedPane;
 import javax.swing.JTable;
 
 	
+/**
+ * @author Mike Creel
+ *
+ */
 public class ShowGoat {
 	private Control cc;
 	public JPanel jp1;
@@ -26,6 +30,10 @@ public class ShowGoat {
 	
 	
 		
+	/**
+	 * @param cc - Calling Control
+	 * @param goat - Name of the goat that is to be loaded into this ShowGoat
+	 */
 	public ShowGoat(Control cc, String goat) {
 		this.cc = cc;
 		this.goat = goat;
@@ -33,9 +41,11 @@ public class ShowGoat {
 	
 		//Create object to hold goat data
 		SGdata = new goatInfo();
+		
 		//Create object to conduct queries
 		SGquery = new QueryHerd(SGdata);
 	}
+
 
 	public void Start() {
 	
@@ -59,6 +69,7 @@ public class ShowGoat {
 	     */
 	    
 	    SGdisplayHeader myheader = new SGdisplayHeader(this, cc); 
+	    
 	    myheader.displayHeader();
 	    
 	    
