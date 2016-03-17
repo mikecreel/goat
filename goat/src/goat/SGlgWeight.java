@@ -2,6 +2,7 @@ package goat;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
@@ -34,6 +35,7 @@ public class SGlgWeight {
 	LocalDate birthdate;
 	JLabel weandaysLabel;
 	JLabel weanweightLabel;
+
 	
 	
 	public SGlgWeight(ShowGoat SG, Control cc) {
@@ -97,11 +99,17 @@ public class SGlgWeight {
 		//Action Listers for Add Button
 		addButton.addActionListener(new ActionListener() {
 	    	  public void actionPerformed(ActionEvent e) {
-// TODO Wean weight calculation not working suspect a bad date 2/17/2016 vs 02/17/2016
+	    		  //Verify it is a good date
 	    		  Checkdate gooddate = new Checkdate();
 	    		  Boolean OK2Save = gooddate.mmddyyyy(weightdateField.getText().trim());
-	    		  //Make sure weight is a valid weight (float)
-	    		  
+	    		  //Convert date to correct format
+	    		  SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+	    		  dateFormat.setLenient(false);
+	    		  String DateToStr = dateFormat.format(weightdateField.getText().trim());
+	    		  weightdateField.setText(DateToStr);
+
+	    		  // TODO Make sure weight is a valid weight (float)
+
 	    		  if (OK2Save) {
 	    		  
 	    			  String ww = null;
