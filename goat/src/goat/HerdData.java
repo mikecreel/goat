@@ -9,6 +9,8 @@ public class HerdData {
 		
 	}
 
+
+	
 	//TODO Monitoring page for items like FAMACHA score of 4 or 5
 	//TODO  CHange all dates to date type in database and research java data functions
 	//TODO How are reference goats entered?

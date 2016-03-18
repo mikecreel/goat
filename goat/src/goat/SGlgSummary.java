@@ -22,8 +22,9 @@ public class SGlgSummary {
 	public void displaySummary() {
 		JPanel summaryPanel = new JPanel();
 		summaryPanel.setLayout(null);
-		SG.lgjtp.addTab("Summary", summaryPanel);
 		summaryPanel.setBackground(SG.customColor);
+		SG.lgjtp.addTab("Summary", summaryPanel);
+		
 		
 		Image image = null;
 		File sourceimage;

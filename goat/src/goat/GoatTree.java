@@ -30,6 +30,7 @@ public class GoatTree {
         //create the root node
         root = new DefaultMutableTreeNode("Goats");
         treeModel = new DefaultTreeModel(root);
+        
         //create the child nodes
        
         String[] bucks = cc.myQuery.getnames("SELECT * From GOAT.HERD WHERE HERDGROUP = 'Bucks' AND OWNED = 'yes' AND DEATH = 'no' AND SOLD = 'no'");
@@ -108,19 +109,20 @@ public class GoatTree {
 		    JTree tree = (JTree) se.getSource();
 		    DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode) tree
 		        .getLastSelectedPathComponent();
+//TODO Getting an error here after first selection.  Program runs without issue though
 		    String selectedNodeName = selectedNode.toString();
 		    if (selectedNode.isLeaf()) {
 
 		      ShowGoat thegoat = new ShowGoat(cc,selectedNodeName);
 		      thegoat.Start();
-		      
+//TODO Make the new tab has focus.  See How I did it in DSR like PastDSR		      
 
 		    }
 		  }
 		}
 	
 	
-	public void updateTree(String goat) {
+	public void updateTree(String goat) {  //This is something from test on mainmenu looks like it was a work in progress
 		cc.mydb.column1.remove(tree);
 		cc.myTree.Start();
 //		treeModel.insertNodeInto(new DefaultMutableTreeNode(goat), buckNode, buckNode.getChildCount());

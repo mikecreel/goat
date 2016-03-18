@@ -54,8 +54,6 @@ public class SGsmBirth {
 		
 		JCheckBox firstlactationCB = new JCheckBox("Doe's first lactation");
 		firstlactationCB.setBounds(320, 20, 150, 20);
-		// Removed this to allow disabled CB to be more visible.
-		//firstlactationCB.setBackground(SG.customColor);
 		firstlactation = SG.SGdata.getFirstlactation();
 		
 		if (firstlactation.equals("yes")) {
@@ -113,11 +111,14 @@ public class SGsmBirth {
 		JButton btnEditSave = new JButton("edit");
 		btnEditSave.setBounds(845, 60, 80, 20);
 		birthPanel.add(btnEditSave);
+		
 		//Add cancel button to tab
 		JButton btnCancel = new JButton("cancel");
 		btnCancel.setBounds(845, 90, 80, 20);
 		birthPanel.add(btnCancel);
 		btnCancel.setVisible(false);
+
+//TODO Code could be reduced here.  Not a high priority.		
 		
 		btnEditSave.addActionListener(new ActionListener() {
 	          public void actionPerformed(ActionEvent e) {
@@ -146,8 +147,10 @@ public class SGsmBirth {
 	        			  firstlactation = "no";
 	        		  }
 	        		  
-	        		  //TODO Verify Birthdate is correct format
+//TODO Verify Birth date is correct format
 	        		 
+
+//TODO Is Data Checking enough?  Compare with other symbols in earlier data checking notes	        		  
 	        		  //Data Checking
 	        		  bnotesField.setText(bnotesField.getText().replace("'", ""));
 	        		  bnotesField.setText(bnotesField.getText().replace("\"", ""));
@@ -163,6 +166,7 @@ public class SGsmBirth {
 	        		  myinsert = myinsert +  " WHERE ID= "  + SG.SGdata.getId();
 	        					
 	        		  SG.SGquery.updateGoat(myinsert);
+//TODO Edit does not update display after save.  Reverts back to original values.  Does update db though.	        		  
 	        		  
 	        	  }
 	        	}

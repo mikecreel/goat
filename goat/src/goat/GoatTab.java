@@ -591,7 +591,9 @@ public class GoatTab {
 				
 		
 		cc.myQuery.updateGoat(myinsert);
-		cc.myTree.updateTree(nameField.getText().trim());
+		
+		cc.myTree.updateTree(nameField.getText().trim());  //Does this work?  Part of test menu item?
+		
 		cancelGoat();
 		
 	}

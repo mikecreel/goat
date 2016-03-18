@@ -24,8 +24,9 @@ public class SGlgMedical {
 
 		JPanel medicalPanel = new JPanel();
 		medicalPanel.setLayout(null);
-		SG.lgjtp.addTab("Medical", medicalPanel);
 		medicalPanel.setBackground(SG.customColor);
+		SG.lgjtp.addTab("Medical", medicalPanel);
+		
 		
 		//Medical Date//
 		
@@ -60,7 +61,7 @@ public class SGlgMedical {
 		dosageField.setColumns(40);
 		medicalPanel.add(dosageField);
 		
-		//Dosage
+		//Cost
 		
 		JLabel costLabel = new JLabel("Cost: ",SwingConstants.RIGHT);
 		costLabel.setBounds(790, 20, 75, 20);
@@ -80,7 +81,7 @@ public class SGlgMedical {
 		mnoteField.setBounds(205, 50, 600, 20);
 		medicalPanel.add(mnoteField);
 		
-		//TODO  Add medical procedure save button
+//TODO  Add medical procedure save button
 		
 		//Create table to display notes from database
 		
