@@ -207,7 +207,7 @@ public class SGlgWeight {
 				JScrollPane scrollpane = new JScrollPane(SG.weighttable);
 			    scrollpane.setBounds(10, 80, 600, 300);
 			    weightsPanel.add(scrollpane);
-	}//TODO Appears and incorrect date will screw up the weight calculation
+	}
 	
 	private void caculateWeanWeight() {
 		//Calculate Adjusted Weaning Weight

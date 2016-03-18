@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 import util.choosefile;
 import static java.nio.file.StandardCopyOption.*;
 
-
+//TODO Add notes for each picture.  Need to be able to set a date for picture.
 
 public class SGlgPictures {
 	
@@ -85,6 +85,9 @@ public class SGlgPictures {
   	    	  public void actionPerformed(ActionEvent e) {
   	    		
   	    		//TODO  Launch window with full size image
+  	    		//Create a jpanel and something to hold pic and enable with focus, plus close button and handle text  
+  	    		  
+  	    		  
   	    	  }
   	      });
 		// Add buttons to right side of screen
@@ -204,9 +207,7 @@ public class SGlgPictures {
       							myphoto[x] = new ImageIcon(image[x].getScaledInstance(100, 100, Image.SCALE_DEFAULT));
       							picButtons[x].setIcon(myphoto[x]);
       							stored=true;
-      				        } else {
-      				        	//TODO Dialog to say no more room, delete then add
-      				        }
+      				        } 
       					}
       		    		
       		    	}
@@ -217,3 +218,9 @@ public class SGlgPictures {
       		
 	}
 }
+
+
+
+
+
+
