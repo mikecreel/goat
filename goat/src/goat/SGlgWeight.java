@@ -2,7 +2,8 @@ package goat;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.text.SimpleDateFormat;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
@@ -21,6 +22,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
 
 import util.Checkdate;
+import util.FormatDate;
 
 public class SGlgWeight {
 
@@ -35,7 +37,8 @@ public class SGlgWeight {
 	LocalDate birthdate;
 	JLabel weandaysLabel;
 	JLabel weanweightLabel;
-
+	JButton addButton;
+	JCheckBox wwCB;
 	
 	
 	public SGlgWeight(ShowGoat SG, Control cc) {
@@ -69,14 +72,48 @@ public class SGlgWeight {
 		weightField.setColumns(10);
 		weightsPanel.add(weightField);
 		
-		JCheckBox wwCB = new JCheckBox("Wean Weight");
+		// FocusListner for weightField	    
+	   
+		weightField.addFocusListener(new FocusListener() {
+			public void focusGained(FocusEvent e) {
+				//No event here
+			}
+
+			public void focusLost(FocusEvent e) {
+				//Make sure number is a valid float 
+				try {
+					@SuppressWarnings("unused")
+					float val = Float.valueOf(weightField.getText());
+					addButton.setEnabled(true);
+				} catch (NumberFormatException f) {
+					JOptionPane.showMessageDialog(weightsPanel,
+						    "Not a valid weight.",
+						    "Error",
+						    JOptionPane.WARNING_MESSAGE);
+					
+					weightField.setText("");
+					weightField.requestFocus();
+					
+				}
+				
+				
+				
+			}
+		});
+
+		
+		
+		
+		
+		wwCB = new JCheckBox("Wean Weight");
 		wwCB.setBounds(300, 20, 120, 20);
 		wwCB.setBackground(SG.customColor);
 		weightsPanel.add(wwCB);
 		
-		JButton addButton = new JButton("Add");
+		addButton = new JButton("Add");
 		addButton.setBounds(425, 20, 70, 20);
 		weightsPanel.add(addButton);
+		addButton.setEnabled(false);
 		
 		//Calculated weaning weight
 		
@@ -102,13 +139,9 @@ public class SGlgWeight {
 	    		  //Verify it is a good date
 	    		  Checkdate gooddate = new Checkdate();
 	    		  Boolean OK2Save = gooddate.mmddyyyy(weightdateField.getText().trim());
-	    		  //Convert date to correct format
-	    		  SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
-	    		  dateFormat.setLenient(false);
-	    		  String DateToStr = dateFormat.format(weightdateField.getText().trim());
-	    		  weightdateField.setText(DateToStr);
 
-	    		  // TODO Make sure weight is a valid weight (float)
+	    		  FormatDate myFormatDate = new FormatDate();
+	    		  weightdateField.setText(myFormatDate.FormatMyDate(weightdateField.getText()));
 
 	    		  if (OK2Save) {
 	    		  
@@ -155,6 +188,7 @@ public class SGlgWeight {
 	    			   
 	    			  weightField.setText("");
 	    			  weightdateField.setText("");
+	    			  addButton.setEnabled(false);
 	    			  
 	    		  }	else {
 	    			  JOptionPane.showMessageDialog(null, "Weigh Date invalid", "Date Error",JOptionPane.WARNING_MESSAGE);
@@ -239,6 +273,7 @@ public class SGlgWeight {
 				weanweightformatted = weanweightformatted.substring(0,5);					
 			}	
 			weanweightLabel.setText(weanweightformatted);
+			wwCB.setSelected(false);
 		}
 		
 	}
