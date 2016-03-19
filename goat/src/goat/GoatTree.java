@@ -109,7 +109,7 @@ public class GoatTree {
 		    JTree tree = (JTree) se.getSource();
 		    DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode) tree
 		        .getLastSelectedPathComponent();
-//TODO Getting an error here after first selection.  Program runs without issue though
+//FIXME Getting an error here after first selection.  Program runs without issue though
 		    String selectedNodeName = selectedNode.toString();
 		    if (selectedNode.isLeaf()) {
 

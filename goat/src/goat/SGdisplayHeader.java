@@ -65,9 +65,9 @@ public class SGdisplayHeader {
 		JTextField nameField = new JTextField();
 		nameField.setBounds(250, 20, 200, 20);
 		nameField.setText(SG.SGdata.getName());
-		SG.jp1.add(nameField);                        //TODO This needs to be moved to below the set editable on all fields
 		nameField.setColumns(40);
 		nameField.setEditable(false);
+		SG.jp1.add(nameField);
 		
 		//Gender
 	    JLabel genderLabel = new JLabel("Gender: ",SwingConstants.RIGHT);
@@ -77,21 +77,21 @@ public class SGdisplayHeader {
 		JTextField genderField = new JTextField();
 		genderField.setBounds(545, 20, 50, 20);
 		genderField.setText(SG.SGdata.getGender());
-		SG.jp1.add(genderField);
 		genderField.setColumns(20);
 		genderField.setEditable(false);
+		SG.jp1.add(genderField);
 		
 		JRadioButton doeButton = new JRadioButton("Doe");
 		doeButton.setBounds(545, 20, 50, 20);
 		doeButton.setBackground(Color.LIGHT_GRAY);
-		SG.jp1.add(doeButton);
 		doeButton.setVisible(false);
+		SG.jp1.add(doeButton);
 		
 		JRadioButton buckButton = new JRadioButton("Buck");
 		buckButton.setBounds(590, 20, 60, 20);
 		buckButton.setBackground(Color.LIGHT_GRAY);
-		SG.jp1.add(buckButton);
 		buckButton.setVisible(false);
+		SG.jp1.add(buckButton);
 		
 		ButtonGroup genderGroup = new ButtonGroup();
 		genderGroup.add(doeButton);
@@ -108,15 +108,16 @@ public class SGdisplayHeader {
 		JTextField groupField = new JTextField();
 		groupField.setBounds(705, 20, 200, 20);
 		groupField.setText(SG.SGdata.getHerdgroup());
-		SG.jp1.add(groupField);
 		groupField.setEditable(false);
+		SG.jp1.add(groupField);
 		
 		String[] groupStrings = {"","Does", "Bucks", "Doeling", "Buckling", "Sold", "Deceased"};
 		JComboBox<String> groupBox = new JComboBox<String>(groupStrings);
 		groupBox.setSelectedItem(SG.SGdata.getHerdgroup());
 		groupBox.setBounds(705, 20, 200, 20);
-		SG.jp1.add(groupBox);
 		groupBox.setVisible(false);
+		SG.jp1.add(groupBox);
+		
 		
 		//Birth date
 		JLabel birthLabel = new JLabel("Birthdate: ",SwingConstants.RIGHT);
@@ -126,9 +127,9 @@ public class SGdisplayHeader {
 		JTextField birthField = new JTextField();
 		birthField.setBounds(115, 50, 100, 20);
 		birthField.setText(SG.SGdata.getBirthdate());
-		SG.jp1.add(birthField);
 		birthField.setColumns(10);
 		birthField.setEditable(false);
+		SG.jp1.add(birthField);
 		
 		//Percentage
 		JLabel percentLabel = new JLabel("Percentage: ",SwingConstants.RIGHT);
@@ -138,14 +139,16 @@ public class SGdisplayHeader {
 		JTextField percentField = new JTextField();
 		percentField.setBounds(320, 50, 200, 20);
 		percentField.setText(SG.SGdata.getPercentage());
-		SG.jp1.add(percentField);
 		percentField.setEditable(false);
+		SG.jp1.add(percentField);
+		
 		
 		String[] percentStrings = {"","100% NZ", "FullBlood", "87.5% (7/8)", "75% (3/4)", "50% (1/2)","GeneMaster", "Premier GeneMaster", "Kiko GeneMaster"};
 		JComboBox<String> percentBox = new JComboBox<String>(percentStrings);;
 		percentBox.setBounds(320, 50, 200, 20);
-		SG.jp1.add(percentBox);
 		percentBox.setVisible(false);
+		SG.jp1.add(percentBox);
+		
 		
 		//File Number
 		JLabel idLabel = new JLabel("File Number: ",SwingConstants.RIGHT);

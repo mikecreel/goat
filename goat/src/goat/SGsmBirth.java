@@ -46,6 +46,8 @@ public class SGsmBirth {
 		birthField.setText(SG.SGdata.getBirthdate());
 		birthField.setEditable(false);
 		birthPanel.add(birthField);
+		
+		
 
 
 		JLabel birthFormatLabel = new JLabel("mm/dd/yyyy",SwingConstants.RIGHT);
@@ -150,7 +152,7 @@ public class SGsmBirth {
 //TODO Verify Birth date is correct format
 	        		 
 
-//TODO Is Data Checking enough?  Compare with other symbols in earlier data checking notes	        		  
+        		  
 	        		  //Data Checking
 	        		  bnotesField.setText(bnotesField.getText().replace("'", ""));
 	        		  bnotesField.setText(bnotesField.getText().replace("\"", ""));
@@ -166,7 +168,7 @@ public class SGsmBirth {
 	        		  myinsert = myinsert +  " WHERE ID= "  + SG.SGdata.getId();
 	        					
 	        		  SG.SGquery.updateGoat(myinsert);
-//TODO Edit does not update display after save.  Reverts back to original values.  Does update db though.	        		  
+//FIXME Edit does not update display after save.  Reverts back to original values.  Does update db though.	        		  
 	        		  
 	        	  }
 	        	}

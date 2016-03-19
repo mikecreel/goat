@@ -41,6 +41,11 @@ public class SGlgCondition {
 		conditiondateField.setBounds(10, 20, 100, 20);
 		conditiondateField.setColumns(10);
 		conditionPanel.add(conditiondateField);
+//TODO Add Focus Lost event here to handle date
+		
+		
+		
+		
 		
 		JLabel conditiondateFormatLabel = new JLabel("mm/dd/yyyy",SwingConstants.RIGHT);
 		conditiondateFormatLabel.setBounds(10, 40, 80, 20);

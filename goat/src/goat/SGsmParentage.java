@@ -26,7 +26,7 @@ public class SGsmParentage {
 		//////////////////////////////
 		//Setup the parentage tab
 		//////////////////////////////
-//TODO This needs work.  Selection of blood should not occur until after update button is pushed.		
+//FIXME This needs work.  Selection of blood should not occur until after update button is pushed.		
 		JPanel parentagePanel = new JPanel();
 		parentagePanel.setLayout(null);
 		parentagePanel.setBackground(SG.customColor);

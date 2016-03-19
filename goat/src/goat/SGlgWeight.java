@@ -90,20 +90,11 @@ public class SGlgWeight {
 						    "Not a valid weight.",
 						    "Error",
 						    JOptionPane.WARNING_MESSAGE);
-					
 					weightField.setText("");
 					weightField.requestFocus();
-					
 				}
-				
-				
-				
 			}
 		});
-
-		
-		
-		
 		
 		wwCB = new JCheckBox("Wean Weight");
 		wwCB.setBounds(300, 20, 120, 20);
@@ -182,10 +173,7 @@ public class SGlgWeight {
 						}
 	    			  
 	    			  caculateWeanWeight();
-	    			  
-	    			  
-	    			  
-	    			   
+
 	    			  weightField.setText("");
 	    			  weightdateField.setText("");
 	    			  addButton.setEnabled(false);
@@ -275,8 +263,5 @@ public class SGlgWeight {
 			weanweightLabel.setText(weanweightformatted);
 			wwCB.setSelected(false);
 		}
-		
 	}
-	
-
 }
