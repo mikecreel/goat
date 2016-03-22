@@ -9,11 +9,9 @@ public class HerdData {
 		
 	}
 
-
-	
-	//XXX Monitoring page for items like FAMACHA score of 4 or 5
-	//XXX  CHange all dates to date type in database and research java data functions
-	//XXX How are reference goats entered?
+//XXX Monitoring page for items like FAMACHA score of 4 or 5
+//XXX  CHange all dates to date type in database and research java data functions
+//XXX How are reference goats entered?
 	
 	
 	
