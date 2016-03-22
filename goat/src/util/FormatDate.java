@@ -19,7 +19,6 @@ public class FormatDate {
 			date = dateFormat.parse(MyDate);
 			DateToStr = dateFormat.format(date);
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return DateToStr;
