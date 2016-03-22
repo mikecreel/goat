@@ -2,10 +2,13 @@ package goat;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -14,6 +17,9 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
+
+import util.Checkdate;
+import util.FormatDate;
 
 public class SGlgCondition {
 	
@@ -41,15 +47,35 @@ public class SGlgCondition {
 		conditiondateField.setBounds(10, 20, 100, 20);
 		conditiondateField.setColumns(10);
 		conditionPanel.add(conditiondateField);
-//TODO Add Focus Lost event here to handle date
-		
-		
-		
-		
 		
 		JLabel conditiondateFormatLabel = new JLabel("mm/dd/yyyy",SwingConstants.RIGHT);
 		conditiondateFormatLabel.setBounds(10, 40, 80, 20);
 		conditionPanel.add(conditiondateFormatLabel);
+		
+		// Check for valid date on focus lost
+		conditiondateField.addFocusListener(new FocusListener() {
+			public void focusGained(FocusEvent e) {
+				//No event here
+			}
+
+			public void focusLost(FocusEvent e) {
+				Checkdate gooddate = new Checkdate();
+
+				if (gooddate.mmddyyyy(conditiondateField.getText().trim())) {
+					FormatDate myFormatDate = new FormatDate();
+					conditiondateField.setText(myFormatDate.FormatMyDate(conditiondateField.getText()));
+				} else {
+					JOptionPane.showMessageDialog(conditionPanel,
+						    "Not a valid date.",
+						    "Error",
+						    JOptionPane.WARNING_MESSAGE);
+					conditiondateField.setText("");
+					conditiondateField.requestFocus();
+				}
+
+			}
+		});
+
 		
 		//Body Condition
 		
@@ -129,8 +155,6 @@ public class SGlgCondition {
 	    btnSave.addActionListener(new ActionListener() {
 	          public void actionPerformed(ActionEvent e) {
 	        		  String myinsert;
-	        		  
-//TODO Verify  date is correct format
 	        		  
 	        		  //Data Checking
 	        		  

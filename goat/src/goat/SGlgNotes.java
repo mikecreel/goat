@@ -2,9 +2,12 @@ package goat;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -16,6 +19,9 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
+
+import util.Checkdate;
+import util.FormatDate;
 
 public class SGlgNotes {
 	
@@ -46,6 +52,31 @@ public class SGlgNotes {
 		JLabel notedateFormatLabel = new JLabel("mm/dd/yyyy",SwingConstants.RIGHT);
 		notedateFormatLabel.setBounds(10, 40, 80, 20);
 		notesPanel.add(notedateFormatLabel);
+		// XXX Check date on Lost Focus example	
+		notedateField.addFocusListener(new FocusListener() {
+			public void focusGained(FocusEvent e) {
+				//No event here
+			}
+
+			public void focusLost(FocusEvent e) {
+				Checkdate gooddate = new Checkdate();
+
+				if (gooddate.mmddyyyy(notedateField.getText().trim())) {
+					FormatDate myFormatDate = new FormatDate();
+					notedateField.setText(myFormatDate.FormatMyDate(notedateField.getText()));
+				} else {
+					JOptionPane.showMessageDialog(notesPanel,
+						    "Not a valid date.",
+						    "Error",
+						    JOptionPane.WARNING_MESSAGE);
+					notedateField.setText("");
+					notedateField.requestFocus();
+				}
+
+			}
+		});
+
+
 		
 		//Note Label
 		
@@ -70,7 +101,7 @@ public class SGlgNotes {
 		saveButton.addActionListener(new ActionListener() {
 	    	  public void actionPerformed(ActionEvent e) {
 	    		  
-// TODO Check for valid note date
+
 	    		  
 	    		  // Data Checking
 	    		  
