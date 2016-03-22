@@ -115,7 +115,8 @@ public class GoatTree {
 
 		      ShowGoat thegoat = new ShowGoat(cc,selectedNodeName);
 		      thegoat.Start();
-//TODO Make the new tab has focus.  See How I did it in DSR like PastDSR		      
+		      cc.mydb.jtp.setSelectedIndex(cc.mydb.jtp.getTabCount()-1);
+		      
 
 		    }
 		  }
