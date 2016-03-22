@@ -226,6 +226,7 @@ public class QueryHerd{
     	String condnote;
     	
 		int x = 0;
+//DEBUG System.out.println(condquery);
 		System.out.println(condquery);
 		
 		createConnection();
@@ -270,6 +271,7 @@ public class QueryHerd{
     	String estkiddingdate;
     	String note;
     	String id;
+    	//DEBUG System.out.println(breedingquery);
     	System.out.println(breedingquery);
 		int x = 0;
 		
@@ -321,6 +323,7 @@ public class QueryHerd{
     	String buckname;
     	String doename;
     	String id;
+    	//DEBUG System.out.println(kidsquery);
     	System.out.println(kidsquery);
 		int x = 0;
 		
@@ -367,6 +370,7 @@ public class QueryHerd{
     	String notedate;
     	String note;
 		int x = 0;
+		//DEBUG System.out.println(notesquery);
 		System.out.println(notesquery);
 		
 		createConnection();
@@ -405,6 +409,7 @@ public class QueryHerd{
     	String weight;
     	String ww;
 		int x = 0;
+		//DEBUG System.out.println(weightsquery);
 		System.out.println(weightsquery);
 		
 		createConnection();
