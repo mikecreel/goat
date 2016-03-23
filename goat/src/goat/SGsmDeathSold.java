@@ -2,18 +2,24 @@ package goat;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 
 import javax.swing.AbstractButton;
 import javax.swing.ButtonModel;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+
+import util.Checkdate;
+import util.FormatDate;
 
 public class SGsmDeathSold {
 	
@@ -66,6 +72,35 @@ public class SGsmDeathSold {
 		deceaseddateField.setText(SG.SGdata.getDeathdate());
 		deceaseddateField.setEditable(false);
 		deceasedsoldPanel.add(deceaseddateField);
+		
+		//On Focus Lost, check for correct date format
+		
+		deceaseddateField.addFocusListener(new FocusListener() {
+			public void focusGained(FocusEvent e) {
+				//No event here
+			}
+
+			public void focusLost(FocusEvent e) {
+				Checkdate gooddate = new Checkdate();
+
+				if (gooddate.mmddyyyy(deceaseddateField.getText().trim())) {
+					FormatDate myFormatDate = new FormatDate();
+					deceaseddateField.setText(myFormatDate.FormatMyDate(deceaseddateField.getText()));
+				} else {
+					JOptionPane.showMessageDialog(deceasedsoldPanel,
+							"Not a valid date.",
+							"Error",
+							JOptionPane.WARNING_MESSAGE);
+					deceaseddateField.setText("");
+					deceaseddateField.requestFocus();
+				}
+
+			}
+		});
+
+		
+		
+		
 		
 		JLabel dateFielddateFormatLabel = new JLabel("mm/dd/yyyy",SwingConstants.RIGHT);
 		dateFielddateFormatLabel.setBounds(185, 40, 100, 20);
@@ -127,6 +162,32 @@ public class SGsmDeathSold {
 		JLabel solddateFormatLabel = new JLabel("mm/dd/yyyy",SwingConstants.RIGHT);
 		solddateFormatLabel.setBounds(680, 10, 100, 20);
 		deceasedsoldPanel.add(solddateFormatLabel);
+		
+		//On Focus Lost, check for correct date format
+
+		solddateField.addFocusListener(new FocusListener() {
+			public void focusGained(FocusEvent e) {
+				//No event here
+			}
+
+			public void focusLost(FocusEvent e) {
+				Checkdate gooddate = new Checkdate();
+
+				if (gooddate.mmddyyyy(solddateField.getText().trim())) {
+					FormatDate myFormatDate = new FormatDate();
+					solddateField.setText(myFormatDate.FormatMyDate(solddateField.getText()));
+				} else {
+					JOptionPane.showMessageDialog(deceasedsoldPanel,
+							"Not a valid date.",
+							"Error",
+							JOptionPane.WARNING_MESSAGE);
+					solddateField.setText("");
+					solddateField.requestFocus();
+				}
+
+			}
+		});
+
 		
 		//Amount
 		
@@ -221,7 +282,6 @@ public class SGsmDeathSold {
 	        			  soldCBstatus = "no";
 	        		  }
 	        		  
-	        		  //TODO Verify  date is correct format
 	        		  
 	        		  //Remove " ' from notes Fields.
 	        		  snotesField.setText(snotesField.getText().replace("'", ""));

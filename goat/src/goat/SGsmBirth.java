@@ -2,15 +2,21 @@ package goat;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+
+import util.Checkdate;
+import util.FormatDate;
 
 public class SGsmBirth {
 	
@@ -47,6 +53,32 @@ public class SGsmBirth {
 		birthField.setEditable(false);
 		birthPanel.add(birthField);
 		
+		// Check for valid date when focus is list on birthField
+		//TODO Not working the best in the world.  Gives an error when clicking on edit button.
+		
+		birthField.addFocusListener(new FocusListener() {
+			public void focusGained(FocusEvent e) {
+				//No event here
+			}
+
+			public void focusLost(FocusEvent e) {
+				Checkdate gooddate = new Checkdate();
+
+				if (gooddate.mmddyyyy(birthField.getText().trim())) {
+					FormatDate myFormatDate = new FormatDate();
+					birthField.setText(myFormatDate.FormatMyDate(birthField.getText()));
+				} else {
+					JOptionPane.showMessageDialog(birthPanel,
+						    "Not a valid date.",
+						    "Error",
+						    JOptionPane.WARNING_MESSAGE);
+					birthField.setText("");
+					birthField.requestFocus();
+				}
+
+			}
+		});
+
 		
 
 
@@ -149,7 +181,7 @@ public class SGsmBirth {
 	        			  firstlactation = "no";
 	        		  }
 	        		  
-//TODO Verify Birth date is correct format
+
 	        		 
 
         		  
